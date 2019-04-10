@@ -8,7 +8,7 @@ IntegerSet::IntegerSet() {
 }
 
 IntegerSet::IntegerSet(int *a, int length) {
-    `std::cout<<length<<std::endl;
+    std::cout<<length<<std::endl;
 }
 
 void IntegerSet::print() {
