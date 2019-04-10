@@ -4,7 +4,13 @@ using namespace std;
 
 // return result of 1/sqrt(1-x^2)
 long double foo(double x) {
-    return 1/sqrt(1-x*x);
+    if((1 - x*x) > 0) {
+        return 1/sqrt(1-x*x);
+    } else
+    {
+        return 0;
+    }
+    
 }
 
 // integrate the integral of 1/sqrt(1-x^2)
