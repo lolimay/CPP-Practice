@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/media/lolimay/Code/C++/cpp-practice/Episode-1_Function-Class-and-Object/definite_integral/src/definite_integral.cpp
+iostream
+-
+cmath
+-
+
