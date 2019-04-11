@@ -10,7 +10,6 @@ long double foo(double x) {
     {
         return 0;
     }
-    
 }
 
 // integrate the integral of 1/sqrt(1-x^2)
