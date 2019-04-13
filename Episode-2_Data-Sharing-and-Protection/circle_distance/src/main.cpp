@@ -5,8 +5,8 @@
 using namespace std;
 
 // return true if the two numbers are approximately equal
-bool aequal(double x, double y) {
-    if(abs(x - y) <= 0.0001) {
+bool aequal(double x, double y, double precision=0.0001) {
+    if(abs(x - y) <= precision) {
         return true;
     } else {
         return false;
@@ -57,10 +57,10 @@ int main(int argc, char const *argv[])
 
     cout<<"Please input the first circle's parameters: ";
     cin>>x1>>y1>>r1;
+    Circle c1(x1, y1, r1);
     cout<<"Please input the second circle's parameters: ";
     cin>>x2>>y2>>r2;
-
-    Circle c1(x1, y1, r1), c2(x2, y2, r2);
+    Circle c2(x2, y2, r2);
     relation(c1, c2);
     return 0;
 }
