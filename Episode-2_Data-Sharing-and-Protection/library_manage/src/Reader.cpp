@@ -4,8 +4,8 @@
 
 using namespace std;
 
-int Reader::borrow(Book book) {
-    if (book.borrowed) {
+int Reader::borrow(Book* book) {
+    if (book->borrowed) {
         cout<<"Sorry, this book is borrowed!"<<endl;
         return 1;
     }
@@ -15,9 +15,11 @@ int Reader::borrow(Book book) {
         return 2;
     }
 
+    cout<<name<<" borrowed the book \""<<book->name<<"\"."<<endl;
+
     Book::remaining--;
     Book::borrowings++;
-    book.borrowed = true;
+    book->borrowed = true;
 
     return 0;
 }

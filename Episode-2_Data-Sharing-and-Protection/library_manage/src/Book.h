@@ -1,9 +1,13 @@
 #ifndef BOOK_H
 #define BOOK_H
 
+#include <string>
+
+using namespace std;
+
 class Book {
     public:
-        Book() : borrowed(false) {
+        Book(string name) : name(name), borrowed(false) {
             total++;
             remaining++;
         };
@@ -13,6 +17,7 @@ class Book {
         friend class Reader;
     private:
         static int total, remaining, borrowings;
+        string name; // the book name
         bool borrowed;
 };
 
