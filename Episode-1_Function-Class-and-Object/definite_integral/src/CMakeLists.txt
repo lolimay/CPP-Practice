@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 3.11.2)
-project(bin VERSION 1.0.0)
+project(bin
+    VERSION 1.0.0
+)
 
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
