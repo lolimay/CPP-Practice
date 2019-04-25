@@ -22,3 +22,4 @@ int main()
 	r.borrow(b2);
 	b1->display();
 }
+
