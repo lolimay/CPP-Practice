@@ -77,6 +77,7 @@ bool MyTime::operator== (const MyTime &mt2) const {
 
     return false;
 }
+
 MyTime MyTime::operator+ (const MyTime &mt2) const {
     int totalSecondsA = hour * 3600 + minute * 60 + second;
     int totalSecondsB = mt2.hour * 3600 + mt2.minute * 60 + mt2.second;
